@@ -7,8 +7,8 @@
                     <Toolbar class="p-mb-4">
                         <template v-slot:start>
                             <InputText type="text" size="40" placeholder="Nombre del producto..." v-model="productoItem.nomProducto" />
-                            <InputText class="ml-8" type="text" placeholder="Cant" v-model="productoItem.cantidad" />
-                            <InputText class="ml-8" type="text" placeholder="$ Precio U." v-model="productoItem.precioUnitario" />
+                            <InputText class="ml-8" type="number" placeholder="Cant" v-model="productoItem.cantidad" />
+                            <InputText class="ml-8" type="number" placeholder="$ Precio U." v-model="productoItem.precioUnitario" />
                         </template>
                         <template v-slot:end>
                             <Button label="Registrar" icon="pi pi-plus" class="p-button-success p-mr-2" @click="registrarCompra()" />
